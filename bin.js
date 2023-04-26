@@ -2,8 +2,8 @@
 const fs = require('fs');
 const { filesize: fileSize } = require('filesize')
 const path = require('path');
-const [_filePath] = process.argv;
-const filePath = path.join(process.cwd(), _filePath);
+const [a,b,_filePath] = process.argv;
+const filePath = path.join(path.resolve('./'), _filePath);
 
 fs.stat(filePath, (err, stats) => {
   if (err) {
