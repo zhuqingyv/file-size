@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fs = require('fs');
 const { filesize: fileSize } = require('filesize')
 const path = require('path');
